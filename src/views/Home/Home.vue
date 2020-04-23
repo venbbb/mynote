@@ -1,17 +1,21 @@
 <template>
     <div class="home">
-        <h1>首页</h1>
+        <nav-bar class="nav"><div slot="center">MyNote</div></nav-bar>
         <page-list></page-list>
     </div>
 </template>
 
 <script>
     import PageList from "./components/PageList";
+    import NavBar from "../../components/NavBar";
     export default {
         name: "Home",
-        components: {PageList}
+        components: {PageList,NavBar}
     }
 </script>
 
 <style scoped>
+    .nav{
+        font-weight: bold;
+    }
 </style>
